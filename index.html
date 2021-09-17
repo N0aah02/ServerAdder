@@ -43,18 +43,18 @@
                 </div>
 
                 <div class="col-12 form-group">
-                    <input type="submit" class="btn btn-primary rounded-pill d-block" value="Erstellen Sie einen Link!" onclick="createServerUrl();">
+                    <input type="submit" class="btn btn-primary rounded-pill d-block" value="Erstellen Sie einen Link!" onclick="createLink();">
                 </div>
             </form>
             <hr>
             <form class="row" name="result_form" action="javascript:void(0)">
                 <div class="col-12 form-group">
-                    <label for="result"><h3>Greifen Sie auf den untenstehenden Link zu, um den Server hinzuzufügen</h3></label>
+                    <label for="result"><h3>Hier ist der Generierte Link</h3></label>
                     <textarea id="result" class="form-control" type="text" readonly="readonly"></textarea>
                 </div>
 
                 <div class="col-12 form-group">
-                    <input type="submit" class="btn btn-primary rounded-pill" value="Copy the Link" onclick="copyServerUrl();">
+                    <input type="submit" class="btn btn-primary rounded-pill" value="Copy the Link" onclick="copyLink();">
                 </div>
             </form>
         </div>
