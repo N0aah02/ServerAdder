@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="bbo51dog">
+    <meta name="description" content="add server to mcbe server list">
+    <title>Add mcbe server</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/AddServer.js"></script>
+    <script type="text/javascript" src="js/CopyLink.js"></script>
+    <script type="text/javascript" src="js/CreateLink.js"></script>
+    <script src="https://kit.fontawesome.com/e9af744987.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="addServer();">
+    <div id="wrap">
+        <header>
+            <div class="ct">
+                <div class="over">
+                    <h1>Add MCBE server</h1>
+                    <p>- Add mcbe server to server list in app -</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <form class="row" name="create_form" action="javascript:void(0)">
+                <div class="col-12 form-group">
+                    <label for="create_name"><h3>Servername (Japanisch nicht empfohlen)</h3></label>
+                    <input id="create_name" class="form-control" type="text">
+                </div>
+
+                <div class="col-12 form-group">
+                    <label for="create_ip"><h3>Server-IP</h3></label>
+                    <input id="create_ip" class="form-control" type="text">
+                </div>
+
+                <div class="col-12 form-group">
+                    <label for="create_port"><h3>Serveradresse (Port)</h3></label>
+                    <input id="create_port" class="form-control" type="text" value="19132">
+                </div>
+
+                <div class="col-12 form-group">
+                    <input type="submit" class="btn btn-primary rounded-pill d-block" value="Erstellen Sie einen Link!" onclick="createLink();">
+                </div>
+            </form>
+            <hr>
+            <form class="row" name="result_form" action="javascript:void(0)">
+                <div class="col-12 form-group">
+                    <label for="result"><h3>Greifen Sie auf den untenstehenden Link zu, um den Server hinzuzufügen</h3></label>
+                    <textarea id="result" class="form-control" type="text" readonly="readonly"></textarea>
+                </div>
+
+                <div class="col-12 form-group">
+                    <input type="submit" class="btn btn-primary rounded-pill" value="Copy the Link" onclick="copyServerUrl();">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright ©︎ 2020-2021 bbo51dog All Rights Reserved.</p>
+        <div>
+            <a href="https://twitter.com/bbo51dog" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="https://discord.gg/GuzEeqK" target="_blank"><i class="fab fa-discord fa-2x"></i></a>
+            <a href="https://github.com/bbo51dog" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
