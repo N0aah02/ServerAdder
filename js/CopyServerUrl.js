@@ -1,6 +1,6 @@
-function copyServerUrl(){
-  if(result_from.result.value){
-    result_from.result.select();
-    document.execCommand("Copy");
-  }
+function copyLink(){
+    if(result_form.result.value){
+        result_form.result.select();
+        document.execCommand("Copy");
+    }
 }
